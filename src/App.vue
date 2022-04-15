@@ -1,30 +1,29 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+	<!-- <router-view/> -->
+	<LandingSection />
+	<SkillsSection />
+	<RecentWorkSection />
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+<script>
+import LandingSection from "@/components/sections/LandingSection.vue";
+import SkillsSection from "@/components/sections/SkillsSection.vue";
+import RecentWorkSection from "@/components/sections/RecentWorkSection.vue";
+
+export default {
+    components: {
+		LandingSection,
+		SkillsSection,
+		RecentWorkSection
+	},
 }
+</script>
 
-nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+<style lang="scss">
+html, body, #app {
+	font-size: 24px;
+	height: 100%;
+	font-family: "Arial", "Lato-Regular", sans-serif;
+	box-sizing: border-box;
 }
 </style>

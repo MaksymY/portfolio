@@ -1,0 +1,7 @@
+@mixin animation-mixin($from, $to) {
+    @keyframes test {
+        0% { opacity: 0;}
+        50% { top: $from; opacity: 1;}
+        100% { top: $to; opacity: 0;}
+    }
+}
