@@ -1,9 +1,9 @@
 <template>
-  <div class="landing">
-    <div class="nav">
+  <div class="landing" id="home">
+    <!-- <div class="nav">
       <p class="nav__icon">M</p>
       <img class="nav__burger" src="../../assets/Menu.png" alt="" srcset="">
-    </div>
+    </div> -->
     <div class="landing__title">
       <p class="landing__title-hello">Hello there i am</p>
       <p class="landing__title-name">Maksym Yankivskyy</p>
@@ -23,7 +23,7 @@ export default {
 }
 </script>
 <style lang="scss">
-.nav {
+/* .nav {
   display: flex;
   justify-content: space-between;
   margin-top: 10%;
@@ -38,13 +38,14 @@ export default {
     width: 40px;
     height: 24px;
   } 
-}
+} */
 .landing {
   padding: 0 10%;
   display: flex;
   flex-direction: column;
   gap: 60px;
   &__title{
+    margin-top: 40%;
     color: $font_color;
     font-weight: bold;
     font-size: 24px;

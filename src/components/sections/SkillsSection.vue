@@ -1,5 +1,5 @@
 <template>
-    <div class="SkillPage">
+    <div class="SkillPage" id="skills">
         <div class="SkillPage__header">
             <p class="SkillPage__header-title">My Skills</p>
             <p class="SkillPage__header-description">I Have start programmation four years ago. Actually i work in a good eterprise where i learn lot skills but essentialy i learn everythink by my self.

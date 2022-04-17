@@ -1,5 +1,5 @@
 <template>
-    <div class="RecentWork">
+    <div class="RecentWork" id="work">
         <p class="RecentWork__title">Resent Work</p>
         <section class="RecentWork__section-work">
             <WorkBadge :title="'Portfolio Anne Lise Ribeiro'">
@@ -21,6 +21,7 @@ export default {
 <style lang="scss">
 .RecentWork {
     &__title {
+        margin: 0;
         color: $font-color;
         font-weight: bold;
         text-align: center;
@@ -35,6 +36,7 @@ export default {
         flex-direction: column;
         justify-content: space-between;
         padding: 0 10%;
+        margin-top: 25px;
         gap: 10px;
     }
 

@@ -1,63 +1,45 @@
 <template>
-    <div class="SkillPage">
-        <div class="SkillPage__header">
-            <p class="SkillPage__header-title">My Skills</p>
-            <p class="SkillPage__header-description">I Have start programmation four years ago. Actually i work in a good eterprise where i learn lot skills but essentialy i learn everythink by my self.
-            </p>
-        </div>
-        <section class="SkillPage__section-skills">
-            <SkillBadge :title="'Front-end'">
-                <p class="SkillPage__list">Vue.js, React.js, css, scss, html, pug</p>
-            </SkillBadge>
-            <SkillBadge :title="'Back-end'">
-                <p class="SkillPage__list">Vue.js, React.js, css, scss, html, pug</p>
-            </SkillBadge>
-            <SkillBadge :title="'Mobile'" :icon="'Phone.png'">
-                <p class="SkillPage__list">Vue.js, React.js, css, scss, html, pug</p>
-            </SkillBadge>
-        </section>
+    <div class="WorkTogether" id="contact">
+        <p class="WorkTogether__title">Let's work together</p>
+        <p class="WorkTogether__description">Interested in working together? We should queue up a chat. I’ll buy the coffee.</p>
+        <button class="WorkTogether__button">Contact Me</button>
     </div>
 </template>
 
 <script>
-import SkillBadge from "@/components/SkillBadge.vue";
 export default {
-    name: 'DesktopAnimation',
-    components: {
-        SkillBadge,
-    }
+    name: 'WorkTogether',
 }
 </script>
 <style lang="scss">
-.SkillPage {
-    
-    &__header {
-        background-color: $main_color;
-        text-align: center;
-        padding: 10% 10% 30% 10%;
-    }
-    &__header-title {
-        color: white;
-        font-size: 20px;
+.WorkTogether {
+    background-color: $main_color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 34px;
+    padding: 10%;
+    margin-top: 20%; 
+
+    &__title {
+        color: $font_color;
         font-weight: bold;
+        margin: 0;
     }
-
-    &__header-description {
+    &__description {
         color: white;
+        margin: 0;
+    }
+    &__button {
+        background-color: transparent;
+        border-radius: 10px;
         font-size: 20px;
-    }
-
-    &__section-skills {
-        transform: translate(0px, -90px);
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        padding: 0 10%;
-        gap: 10px;
-    }
-
-    &__list {
-        color: white;
+        color: $font_color;
+        border: 3px solid $font_color;
+        padding: 1em;
+        width: 175px;
     }
 }
 </style>

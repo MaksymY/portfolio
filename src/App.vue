@@ -1,20 +1,29 @@
 <template>
 	<!-- <router-view/> -->
+	<NavBar/>
 	<LandingSection />
 	<SkillsSection />
 	<RecentWorkSection />
+	<WorkTogetherSection />
+	<FooterSection />
 </template>
 
 <script>
 import LandingSection from "@/components/sections/LandingSection.vue";
 import SkillsSection from "@/components/sections/SkillsSection.vue";
 import RecentWorkSection from "@/components/sections/RecentWorkSection.vue";
+import WorkTogetherSection from "@/components/sections/WorkTogetherSection.vue";
+import FooterSection from "@/components/sections/FooterSection.vue";
+import NavBar from "@/components/NavBar.vue";
 
 export default {
     components: {
 		LandingSection,
 		SkillsSection,
-		RecentWorkSection
+		RecentWorkSection,
+		WorkTogetherSection,
+		FooterSection,
+		NavBar,
 	},
 }
 </script>
