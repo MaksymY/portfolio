@@ -76,6 +76,20 @@ export default {
     height: 4px; 
     background-color: $font-color;
     border-radius: 4px;
+    transition: .5s;
+
+    &--open {
+        transform: rotate(45deg);
+        &:before {
+            transition: .5s;
+            opacity: 0;
+        }
+        &:after {
+            transition: .5s;
+            transform: rotate(90deg) !important;
+            width: 35px !important;
+        }
+    }
 
     &:before {
         content: "";
@@ -86,6 +100,7 @@ export default {
         transform: translate(-5px ,-8px);
         border-radius: 50%;
         border-radius: 4px;
+        transition: .5s;
     }
 
     &:after {
@@ -97,6 +112,7 @@ export default {
         background-color: $font-color;
         border-radius: 50%;
         border-radius: 4px;
+        transition: .5s;
     }
 }
 .nav {
