@@ -1,27 +1,26 @@
 <template>
     <div class="SkillBadge">
-        <img class="SkillBadge__icon" :src="require(`../assets/${icon}`)"/>
+        <BaseIcon class="SkillBadge__icon" :href="icon"/>
         <p class="SkillBadge__title">{{ title }}</p>
         <slot/>
     </div>
 </template>
 
 <script>
+import BaseIcon from "@/components/BaseIcon.vue";
 export default {
     name: 'SkillBadge',
+    components: {
+        BaseIcon,
+    },
     props: {
         icon: {
             type: String,
-            default: "developIcon.png",
         },
         title: {
             type: String,
             required: true,
         },
-        skills: {
-            type: Array,
-            required: true,
-        }
     }
 }
 </script>
@@ -43,8 +42,8 @@ export default {
     }
 
     &__icon {
-        width: 20%;
-        height: 20%;
+        width: 57px;
+        height: 36px;
     }
 }
 </style>

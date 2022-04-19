@@ -109,6 +109,7 @@ export default {
     width: 0;
     transition: .5s;
     z-index: 1;
+    overflow: hidden;
 
     &--open {
         width: 100vw;
@@ -119,13 +120,13 @@ export default {
     &__list {
         padding: 0;
         list-style-type: none;
-        width: 100vw;
         margin: 0;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         height: 100vh;
+        width: 100%;
     }
 
     &__item {

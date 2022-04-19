@@ -2,8 +2,8 @@
     <div class="RecentWork" id="work">
         <p class="RecentWork__title">Resent Work</p>
         <section class="RecentWork__section-work">
-            <WorkBadge :title="'Portfolio Anne Lise Ribeiro'">
-                <p class="RecentWork__description">Simple portfolio avec quelque effet au scroole avec un carousel pour caque sections</p>
+            <WorkBadge title="Portfolio Anne Lise Ribeiro" href="https://anne-lise-ribeiro.fr/">
+                <p class="RecentWork__description">Simple portfolio avec quelque effet au scroole avec un carousel pour chaque sections</p>
             </WorkBadge>
         </section>
     </div>
@@ -29,6 +29,8 @@ export default {
 
     &__description {
         color: white;
+        margin: 0;
+        padding: 10%;
     }
 
     &__section-work {

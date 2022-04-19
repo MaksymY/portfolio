@@ -1,5 +1,6 @@
 <template>
 	<!-- <router-view/> -->
+	<TheIconsSet />
 	<NavBar/>
 	<LandingSection />
 	<SkillsSection />
@@ -9,6 +10,7 @@
 </template>
 
 <script>
+import TheIconsSet from "@/components/TheIconsSet.vue"
 import LandingSection from "@/components/sections/LandingSection.vue";
 import SkillsSection from "@/components/sections/SkillsSection.vue";
 import RecentWorkSection from "@/components/sections/RecentWorkSection.vue";
@@ -24,6 +26,7 @@ export default {
 		WorkTogetherSection,
 		FooterSection,
 		NavBar,
+		TheIconsSet,
 	},
 }
 </script>

@@ -6,14 +6,14 @@
             </p>
         </div>
         <section class="SkillPage__section-skills">
-            <SkillBadge :title="'Front-end'">
+            <SkillBadge title="Front-End" icon="web-development">
                 <p class="SkillPage__list">Vue.js, React.js, css, scss, html, pug</p>
             </SkillBadge>
-            <SkillBadge :title="'Back-end'">
-                <p class="SkillPage__list">Vue.js, React.js, css, scss, html, pug</p>
+            <SkillBadge title="Back-End" icon="web-development">
+                <p class="SkillPage__list">Node.js, Express, MongoDB, Mongoose, AmazonWS</p>
             </SkillBadge>
-            <SkillBadge :title="'Mobile'" :icon="'Phone.png'">
-                <p class="SkillPage__list">Vue.js, React.js, css, scss, html, pug</p>
+            <SkillBadge title="Mobile" icon="mobile-development">
+                <p class="SkillPage__list">Flutter, ReactNative</p>
             </SkillBadge>
         </section>
     </div>

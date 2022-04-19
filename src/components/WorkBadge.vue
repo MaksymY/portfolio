@@ -1,9 +1,9 @@
 <template>
-    <div class="WorkBadge">
+    <a class="WorkBadge" :href="link">
         <img class="WorkBadge__icon" :src="require(`../assets/${icon}`)"/>
         <p class="WorkBadge__title">{{ title }}</p>
         <slot />
-    </div>
+    </a>
 </template>
 
 <script>
@@ -18,8 +18,8 @@ export default {
             type: String,
             required: true,
         },
-        skills: {
-            type: Array,
+        link: {
+            type: String,
             required: true,
         }
     }
@@ -35,6 +35,7 @@ export default {
     justify-content: space-between;
     background-color: $font_color;
     border-radius: 10px;
+    text-decoration: none;
     /* padding: 50px;*/
     &__title {
         color: white;
