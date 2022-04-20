@@ -1,10 +1,10 @@
 <template>
     <div class="Footer">
         <section class="Footer__socialNetwork">
-            <a class="Footer__socialNetwork-link" href="https://www.linkedin.com/in/maksym-yankivskyy">
+            <a class="Footer__socialNetwork-link" href="https://github.com/MaksymY">
                 <BaseIcon class="Footer__socialNetwork-icon" href="github"/>
             </a>
-            <a class="Footer__socialNetwork-link" href="https://github.com/MaksymY">
+            <a class="Footer__socialNetwork-link" href="https://www.linkedin.com/in/maksym-yankivskyy">
                 <BaseIcon class="Footer__socialNetwork-icon" href="linkedin"/>
             </a>
         </section>

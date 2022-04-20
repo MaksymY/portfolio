@@ -2,7 +2,12 @@
     <div class="WorkTogether" id="contact">
         <p class="WorkTogether__title">Let's work together</p>
         <p class="WorkTogether__description">Interested in working together? We should queue up a chat. I’ll buy the coffee.</p>
-        <button class="WorkTogether__button">Contact Me</button>
+        <button class="WorkTogether__button">
+            <a href="mailto:maksym.yankivskyypro@gmail.com">Send Mail</a>
+        </button>
+        <button class="WorkTogether__button">
+            <a href="tel:0664155085">Call Me</a>
+        </button>
     </div>
 </template>
 
@@ -40,6 +45,11 @@ export default {
         border: 3px solid $font_color;
         padding: 1em;
         width: 175px;
+
+        a {
+            text-decoration: none;
+            color: $font_color;
+        }
     }
 }
 </style>

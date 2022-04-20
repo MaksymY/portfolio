@@ -40,6 +40,8 @@ export default {
     &__title {
         color: white;
         font-weight: bold;
+        margin: 0;
+        padding: 10% 10% 0 10%;
     }
 
     &__icon {

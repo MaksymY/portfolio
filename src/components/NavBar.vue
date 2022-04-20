@@ -82,7 +82,7 @@ export default {
         transform: rotate(45deg);
         &:before {
             transition: .5s;
-            opacity: 0;
+            display: none;
         }
         &:after {
             transition: .5s;
