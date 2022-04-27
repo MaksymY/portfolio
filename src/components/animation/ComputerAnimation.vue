@@ -59,6 +59,10 @@
     &__office {
         width: 256px;
         height: 256px;
+        @media (min-width:900px) {
+            width: 400px;
+            height: 400px;
+        }
     }
     /* SMOKE */
     #smoke-1 {
@@ -104,34 +108,35 @@
     }
 
     &__code {
-        width: 15px;
+        width: 6%;
         position: absolute;
         opacity: 0;
-        top: 50px;
+        top: 20%;
         left: 0;
         right: 0;
         margin: auto;
         animation: fly 2s linear infinite;
     }
     &__test {
-        width: 15px;
+        width: 6%;
         position: absolute;
         opacity: 0;
-        top: 70px;
-        left: -100px;
+        top: 20%;
+        left: -35%;
         right: 0;
         margin: auto;
         animation: fly 2.1s .4s linear infinite;
     }
     &__vue {
-        width: 15px;
+        width: 6%;
         position: absolute;
         opacity: 0;
-        top: 60px;
-        left: -50px;
+        top: 20%;
+        left: -20%;
         right: 0;
         margin: auto;
         animation: fly 2.2s .6s linear infinite;
+
     }
 
     @keyframes fly {

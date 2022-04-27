@@ -51,7 +51,7 @@ export default {
 </script>
 <style lang="scss">
 .navEl {
-    background: rgba(0, 0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(4px);
     position: fixed;
     width: 100%;
@@ -61,6 +61,16 @@ export default {
     align-items: center;
 
     &--open {
+        background-color: transparent;
+    }
+
+    @media (min-width:900px) {
+        backdrop-filter: none;
+        top: 10px;
+        left: 40px;
+        position: fixed;
+        z-index: 30;
+        width: fit-content;
         background-color: transparent;
     }
 }
@@ -77,6 +87,10 @@ export default {
     background-color: $font-color;
     border-radius: 4px;
     transition: .5s;
+
+    @media (min-width:900px) {
+        display: none;
+    }
 
     &--open {
         transform: rotate(45deg);
@@ -127,6 +141,15 @@ export default {
     z-index: 1;
     overflow: hidden;
 
+    @media (min-width:900px) {
+        width: 100%;
+        height: 60px;
+        background-color: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(4px);
+        z-index: 10;
+        display: flex;
+    }
+
     &--open {
         width: 100vw;
         border-radius: 0;
@@ -143,6 +166,13 @@ export default {
         justify-content: center;
         height: 100vh;
         width: 100%;
+
+        @media (min-width:900px) {
+            flex-direction: row;
+            height: auto;
+            z-index: 10;
+            gap: 50px;
+        }
     }
 
     &__item {
@@ -152,6 +182,12 @@ export default {
 
         &:not(:last-child) {
             margin-bottom: 20px;
+        }
+
+        @media (min-width:900px) {
+            font-size: 20px;
+            margin-bottom: 0 !important;
+            color: $font-color;
         }
     }
 }

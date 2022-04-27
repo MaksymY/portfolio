@@ -36,6 +36,10 @@ export default {
     border-radius: 10px;
     padding: 50px;
 
+    @media (min-width:900px) {
+        width: 30%;
+    }
+
     &__title {
         color: white;
         font-weight: bold;

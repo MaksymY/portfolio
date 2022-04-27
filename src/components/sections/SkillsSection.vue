@@ -35,6 +35,9 @@ export default {
         background-color: $main_color;
         text-align: center;
         padding: 10% 10% 30% 10%;
+        @media (min-width:900px) {
+            padding: 5% 10% 10% 10%;
+        }
     }
     &__header-title {
         color: white;
@@ -54,6 +57,10 @@ export default {
         justify-content: space-between;
         padding: 0 10%;
         gap: 10px;
+
+        @media (min-width:900px) {
+            flex-direction: row;
+        }
     }
 
     &__list {

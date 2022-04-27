@@ -1,6 +1,7 @@
 <template>
 	<!-- <router-view/> -->
 	<TheIconsSet />
+	<SocialDesk />
 	<NavBar/>
 	<LandingSection />
 	<SkillsSection />
@@ -17,6 +18,7 @@ import RecentWorkSection from "@/components/sections/RecentWorkSection.vue";
 import WorkTogetherSection from "@/components/sections/WorkTogetherSection.vue";
 import FooterSection from "@/components/sections/FooterSection.vue";
 import NavBar from "@/components/NavBar.vue";
+import SocialDesk from "@/components/SocialDesk.vue";
 
 export default {
     components: {
@@ -27,6 +29,7 @@ export default {
 		FooterSection,
 		NavBar,
 		TheIconsSet,
+		SocialDesk
 	},
 }
 </script>

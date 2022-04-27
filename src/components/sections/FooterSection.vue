@@ -24,10 +24,16 @@ export default {
 <style lang="scss">
 .Footer {
     padding: 10% 20%;
+    @media (min-width:900px) {
+        padding: 5%;
+    }
     &__socialNetwork {
         display: flex;
         justify-content: center;
         gap: 10%;
+        @media (min-width:900px) {
+            display: none;
+        }
     }
     &__socialNetwork-link {
         text-decoration: none;
@@ -43,6 +49,10 @@ export default {
         font-size: 16px;
         color: $font_color;
         text-align: center;
+
+        @media (min-width:900px) {
+            margin: 0;
+        }
     }
 }
 </style>

@@ -2,12 +2,14 @@
     <div class="WorkTogether" id="contact">
         <p class="WorkTogether__title">Let's work together</p>
         <p class="WorkTogether__description">Interested in working together? We should queue up a chat. I’ll buy the coffee.</p>
-        <button class="WorkTogether__button">
-            <a href="mailto:maksym.yankivskyypro@gmail.com">Send Mail</a>
-        </button>
-        <button class="WorkTogether__button">
-            <a href="tel:0664155085">Call Me</a>
-        </button>
+        <div class="WorkTogether__section">
+            <button class="WorkTogether__button">
+                <a href="mailto:maksym.yankivskyypro@gmail.com">Send Mail</a>
+            </button>
+            <button class="WorkTogether__button">
+                <a href="tel:0664155085">Call Me</a>
+            </button>
+        </div>
     </div>
 </template>
 
@@ -25,7 +27,7 @@ export default {
     text-align: center;
     flex-direction: column;
     gap: 34px;
-    padding: 10%;
+    padding: 100px 10%;
     margin-top: 20%; 
 
     &__title {
@@ -36,6 +38,16 @@ export default {
     &__description {
         color: white;
         margin: 0;
+    }
+    &__section {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        @media (min-width:900px) {
+            display: flex;
+            flex-direction: row;
+            gap: 50px;
+        }
     }
     &__button {
         background-color: transparent;
