@@ -1,6 +1,6 @@
 <template>
     <div class="RecentWork" id="work">
-        <p class="RecentWork__title">Resent Work</p>
+        <p class="RecentWork__title">{{ $t("work") }}</p>
         <section class="RecentWork__section-work">
             <WorkBadge title="Portfolio Anne Lise Ribeiro" href="https://anne-lise-ribeiro.fr/">
                 <p class="RecentWork__description">Simple portfolio avec quelque effet au scroole avec un carousel pour chaque sections</p>
@@ -48,6 +48,7 @@ export default {
         @media (min-width:900px) {
             flex-wrap: wrap;
             flex-direction: row;
+            margin-top: 80px;
         }
     }
 

@@ -88,11 +88,13 @@ export default {
   &__title-function {
     font-size: 40px;
     margin: 0;
+    animation: apearText 2s ease-in-out;
   }
 
   &__title-name {
     color: $main_color;
     margin: 20px 0;
+    animation:  apearText 2s ease-in-out;
     @media (min-width:900px) {
       font-size: 40px;
     }

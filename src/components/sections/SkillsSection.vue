@@ -1,7 +1,7 @@
 <template>
     <div class="SkillPage" id="skills">
         <div class="SkillPage__header">
-            <p class="SkillPage__header-title">My Skills</p>
+            <p class="SkillPage__header-title">{{ $t("skills") }}</p>
             <p class="SkillPage__header-description">{{ $t("description-skills") }}</p>
         </div>
         <section ref="test" class="SkillPage__section-skills">
