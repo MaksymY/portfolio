@@ -5,6 +5,9 @@
             <WorkBadge title="Portfolio Anne Lise Ribeiro" href="https://anne-lise-ribeiro.fr/">
                 <p class="RecentWork__description">Simple portfolio avec quelque effet au scroole avec un carousel pour chaque sections</p>
             </WorkBadge>
+            <WorkBadge title="Portfolio Anne Lise Ribeiro" href="https://anne-lise-ribeiro.fr/">
+                <p class="RecentWork__description">Simple portfolio avec quelque effet au scroole avec un carousel pour chaque sections</p>
+            </WorkBadge>
         </section>
     </div>
 </template>
@@ -22,6 +25,7 @@ export default {
 .RecentWork {
     &__title {
         margin: 0;
+        font-size: 40px;
         color: $font-color;
         font-weight: bold;
         text-align: center;
@@ -40,6 +44,11 @@ export default {
         padding: 0 10%;
         margin-top: 25px;
         gap: 10px;
+
+        @media (min-width:900px) {
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
     }
 
     &__list {

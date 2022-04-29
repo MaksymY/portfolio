@@ -1,10 +1,10 @@
 <template>
     <div class="deck">
         <div class="socialDeck">
-            <a class="socialDeck__socialNetwork-link" href="https://github.com/MaksymY">
+            <a target="_blank" class="socialDeck__socialNetwork-link" href="https://github.com/MaksymY">
                 <BaseIcon class="socialDeck__socialNetwork-icon" href="github"/>
             </a>
-            <a class="socialDeck__socialNetwork-link" href="https://www.linkedin.com/in/maksym-yankivskyy">
+            <a target="_blank" class="socialDeck__socialNetwork-link" href="https://www.linkedin.com/in/maksym-yankivskyy">
                 <BaseIcon class="socialDeck__socialNetwork-icon" href="linkedin"/>
             </a>
         </div>
@@ -66,10 +66,11 @@ export default {
         text-decoration: none;
     }
     &__socialNetwork-icon {
-        width: 28px;
-        height: 28px;
+        width: 38px;
+        height: 38px;
         fill: $font-color;
         stroke: $font-color;
+        stroke-width: 4px;
     }
     &__right {
         width: 40px;
@@ -95,6 +96,43 @@ export default {
         padding: 10px;
         font-size: 12px;
         writing-mode: vertical-rl;
+    }
+}
+@keyframes apear2 {
+    from {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes apear {
+    from {
+        width: 0%;
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    to {
+        width: 30vw;
+    }
+}
+
+@keyframes apearDown {
+    from {
+        height: 0vh;
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    to {
+        height: 40vh;
     }
 }
 </style>

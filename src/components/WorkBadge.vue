@@ -36,6 +36,9 @@ export default {
     background-color: $font_color;
     border-radius: 10px;
     text-decoration: none;
+    @media (min-width:900px) {
+        width: 40%;
+    }
     /* padding: 50px;*/
     &__title {
         color: white;

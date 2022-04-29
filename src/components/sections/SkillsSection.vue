@@ -2,10 +2,9 @@
     <div class="SkillPage" id="skills">
         <div class="SkillPage__header">
             <p class="SkillPage__header-title">My Skills</p>
-            <p class="SkillPage__header-description">I Have start programmation four years ago. Actually i work in a good eterprise where i learn lot skills but essentialy i learn everythink by my self.
-            </p>
+            <p class="SkillPage__header-description">{{ $t("description-skills") }}</p>
         </div>
-        <section class="SkillPage__section-skills">
+        <section ref="test" class="SkillPage__section-skills">
             <SkillBadge title="Front-End" icon="web-development">
                 <p class="SkillPage__list">Vue.js, React.js, css, scss, html, pug</p>
             </SkillBadge>
@@ -20,17 +19,32 @@
 </template>
 
 <script>
+import { onMounted, ref } from 'vue';
+import useObserver from '@/composables/use-observer.js';
 import SkillBadge from "@/components/SkillBadge.vue";
 export default {
     name: 'DesktopAnimation',
     components: {
         SkillBadge,
+    },
+    setup() {
+        let test = ref();
+        onMounted(() => {
+            useObserver(test.value, "apear");
+        });
+        return {
+            test,
+        }
     }
 }
 </script>
 <style lang="scss">
+.apear {
+    transition: 1.5s;
+    transform: translate(0px, -130px);
+    opacity: 1 !important;
+}
 .SkillPage {
-    
     &__header {
         background-color: $main_color;
         text-align: center;
@@ -41,7 +55,7 @@ export default {
     }
     &__header-title {
         color: white;
-        font-size: 20px;
+        font-size: 40px;
         font-weight: bold;
     }
 
@@ -51,7 +65,7 @@ export default {
     }
 
     &__section-skills {
-        transform: translate(0px, -90px);
+        opacity: 0;
         display: flex;
         flex-direction: column;
         justify-content: space-between;

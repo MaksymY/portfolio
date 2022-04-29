@@ -37,7 +37,7 @@ export default {
     padding: 50px;
 
     @media (min-width:900px) {
-        width: 30%;
+        width: 45%;
     }
 
     &__title {

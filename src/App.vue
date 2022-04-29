@@ -1,4 +1,4 @@
-<template>
+<template id="app">
 	<!-- <router-view/> -->
 	<TheIconsSet />
 	<SocialDesk />
@@ -37,8 +37,7 @@ export default {
 <style lang="scss">
 html, body, #app {
 	font-size: 24px;
-	height: 100%;
-	font-family: "Arial", "Lato-Regular", sans-serif;
+	font-family: "Lato-Regular", sans-serif;
 	box-sizing: border-box;
 }
 </style>

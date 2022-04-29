@@ -43,6 +43,7 @@ export default {
         height: 34px;
         fill: $font-color;
         stroke: $font-color;
+        stroke-width: 4px;
     }
     &__description {
         margin: 10% 0 0 0;

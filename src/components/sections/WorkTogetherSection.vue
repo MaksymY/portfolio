@@ -1,5 +1,5 @@
 <template>
-    <div class="WorkTogether" id="contact">
+    <div class="WorkTogether" id="contact" ref="contact">
         <p class="WorkTogether__title">Let's work together</p>
         <p class="WorkTogether__description">Interested in working together? We should queue up a chat. I’ll buy the coffee.</p>
         <div class="WorkTogether__section">
@@ -10,16 +10,34 @@
                 <a href="tel:0664155085">Call Me</a>
             </button>
         </div>
+        <p class="WorkTogether__description">30% of all profit is going for help Ukraine</p>
     </div>
 </template>
 
 <script>
+import { onMounted, ref } from 'vue';
+import useObserver from '@/composables/use-observer.js';
+
 export default {
     name: 'WorkTogether',
+    setup() {
+        let contact = ref();
+        onMounted(() => {
+            useObserver(contact.value, "apear1");
+        });
+        return {
+            contact,
+        }
+    }
 }
 </script>
 <style lang="scss">
+.apear1 {
+    transition: 1.5s;
+    opacity: 1 !important;
+}
 .WorkTogether {
+    opacity: 0;
     background-color: $main_color;
     display: flex;
     justify-content: center;
@@ -31,8 +49,9 @@ export default {
     margin-top: 20%; 
 
     &__title {
-        color: $font_color;
+        color: white;
         font-weight: bold;
+        font-size: 40px;
         margin: 0;
     }
     &__description {
