@@ -6,7 +6,7 @@
       <p class="landing__title-function">Full Stack Web &<br/>Mobile Developer</p>
       <div class="landing__name" v-if="isFrench">
         <ArrowAnimation class="landing__arrow"/>
-        <p class="landing__arrow-text">Oui c'est<br>unpeux original 😁</p>
+        <p class="landing__arrow-text">Oui c'est<br>un peux original 😁</p>
       </div>
     </div>
     <ComputerAnimation/>

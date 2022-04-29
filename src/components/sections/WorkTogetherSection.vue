@@ -1,7 +1,7 @@
 <template>
     <div class="WorkTogether" id="contact" ref="contact">
-        <p class="WorkTogether__title">Let's work together</p>
-        <p class="WorkTogether__description">Interested in working together? We should queue up a chat. I’ll buy the coffee.</p>
+        <p class="WorkTogether__title">{{ $t("title-contact") }}</p>
+        <p class="WorkTogether__description">{{ $t("description-contact") }}</p>
         <div class="WorkTogether__section">
             <button class="WorkTogether__button">
                 <a href="mailto:maksym.yankivskyypro@gmail.com">Send Mail</a>
@@ -10,7 +10,7 @@
                 <a href="tel:0664155085">Call Me</a>
             </button>
         </div>
-        <p class="WorkTogether__description">30% of all profit is going for help Ukraine</p>
+        <p class="WorkTogether__description">{{ $t("footer-contact") }}</p>
     </div>
 </template>
 

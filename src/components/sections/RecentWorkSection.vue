@@ -47,6 +47,7 @@ export default {
 
         @media (min-width:900px) {
             flex-wrap: wrap;
+            justify-content: space-around;
             flex-direction: row;
             margin-top: 80px;
         }

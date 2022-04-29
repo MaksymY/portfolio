@@ -244,6 +244,7 @@ export default {
         font-size: 40px;
         text-transform: uppercase;
         color: white;
+        cursor: pointer;
 
         &:not(:last-child) {
             margin-bottom: 20px;
