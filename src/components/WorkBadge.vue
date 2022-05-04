@@ -1,6 +1,6 @@
 <template>
     <a class="WorkBadge" :href="link">
-        <img class="WorkBadge__icon" :src="require(`../assets/${icon}`)"/>
+        <img class="WorkBadge__icon" :src="require(`../assets/${icon}.png`)"/>
         <p class="WorkBadge__title">{{ title }}</p>
         <slot />
     </a>
@@ -12,7 +12,7 @@ export default {
     props: {
         icon: {
             type: String,
-            default: "AnneLise.png",
+            default: "AnneLise",
         },
         title: {
             type: String,

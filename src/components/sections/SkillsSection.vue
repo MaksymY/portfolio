@@ -41,7 +41,7 @@ export default {
 <style lang="scss">
 .apear {
     transition: 1.5s;
-    transform: translate(0px, -130px);
+    transform: translate(0px, -80px);
     opacity: 1 !important;
 }
 .SkillPage {

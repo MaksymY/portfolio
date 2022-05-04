@@ -5,7 +5,16 @@
             <WorkBadge title="Portfolio Anne Lise Ribeiro" href="https://anne-lise-ribeiro.fr/">
                 <p class="RecentWork__description">Simple portfolio avec quelque effet au scroole avec un carousel pour chaque sections</p>
             </WorkBadge>
-            <WorkBadge title="Portfolio Anne Lise Ribeiro" href="https://anne-lise-ribeiro.fr/">
+            <WorkBadge title="Mars Exodus" icon="MarsExodus" href="https://anne-lise-ribeiro.fr/">
+                <p class="RecentWork__description">Simple portfolio avec quelque effet au scroole avec un carousel pour chaque sections</p>
+            </WorkBadge>
+            <WorkBadge title="Wonder" icon="Wonder" href="https://anne-lise-ribeiro.fr/">
+                <p class="RecentWork__description">Simple portfolio avec quelque effet au scroole avec un carousel pour chaque sections</p>
+            </WorkBadge>
+            <WorkBadge title="Just Know" icon="JustKnow" href="https://anne-lise-ribeiro.fr/">
+                <p class="RecentWork__description">Simple portfolio avec quelque effet au scroole avec un carousel pour chaque sections</p>
+            </WorkBadge>
+            <WorkBadge title="Blog" icon="Blog" href="https://anne-lise-ribeiro.fr/">
                 <p class="RecentWork__description">Simple portfolio avec quelque effet au scroole avec un carousel pour chaque sections</p>
             </WorkBadge>
         </section>
