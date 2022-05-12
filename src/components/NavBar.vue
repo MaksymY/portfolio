@@ -79,6 +79,7 @@ export default {
         },
         setLocale(locale) {
             this.$i18n.locale = locale;
+            this.navOpen = false;
         }
     }
 }
@@ -210,6 +211,7 @@ export default {
             flex-direction: row;
             height: auto;
             z-index: 10;
+            margin: 0 0 0 10%;
             gap: 50px;
         }
     }

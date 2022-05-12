@@ -3,14 +3,16 @@
         <p class="WorkTogether__title">{{ $t("title-contact") }}</p>
         <p class="WorkTogether__description">{{ $t("description-contact") }}</p>
         <div class="WorkTogether__section">
-            <button class="WorkTogether__button">
-                <a href="mailto:maksym.yankivskyypro@gmail.com">Send Mail</a>
-            </button>
-            <button class="WorkTogether__button">
-                <a href="tel:0664155085">Call Me</a>
-            </button>
+            <a
+                class="WorkTogether__button"
+                href="mailto:maksym.yankivskyypro@gmail.com"
+            >Send Mail</a>
+            <a
+                class="WorkTogether__button"
+                href="tel:0664155085"
+            >Call Me</a>
         </div>
-        <p class="WorkTogether__description">{{ $t("footer-contact") }}</p>
+        <p class="WorkTogether__help">{{ $t("footer-contact") }}</p>
     </div>
 </template>
 
@@ -46,7 +48,6 @@ export default {
     flex-direction: column;
     gap: 34px;
     padding: 100px 10%;
-    margin-top: 20%; 
 
     &__title {
         color: white;
@@ -76,11 +77,17 @@ export default {
         border: 3px solid $font_color;
         padding: 1em;
         width: 175px;
+        text-decoration: none;
 
         a {
             text-decoration: none;
             color: $font_color;
         }
+    }
+    &__help {
+        color: white;
+        margin: 0;
+        font-size: 15px;
     }
 }
 </style>

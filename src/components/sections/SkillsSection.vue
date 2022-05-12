@@ -4,7 +4,7 @@
             <p class="SkillPage__header-title">{{ $t("skills") }}</p>
             <p class="SkillPage__header-description">{{ $t("description-skills") }}</p>
         </div>
-        <section ref="test" class="SkillPage__section-skills">
+        <section ref="skills" class="SkillPage__section-skills">
             <SkillBadge title="Front-End" icon="web-development">
                 <p class="SkillPage__list">Vue.js, React.js, css, scss, html, pug</p>
             </SkillBadge>
@@ -28,12 +28,12 @@ export default {
         SkillBadge,
     },
     setup() {
-        let test = ref();
+        let skills = ref();
         onMounted(() => {
-            useObserver(test.value, "apear");
+            useObserver(skills.value, "apear");
         });
         return {
-            test,
+            skills,
         }
     }
 }

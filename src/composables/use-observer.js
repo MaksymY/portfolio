@@ -1,5 +1,3 @@
-/* import { onMounted } from 'vue'; */
-
 let useObserver = (target, classEl) => {
     const observer = new IntersectionObserver(
         ([entry]) => {

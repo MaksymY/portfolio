@@ -8,5 +8,15 @@
 	"description-skills": "I started programming, 4 years ago, I obtained a diploma of Designer and developer of digital solutions and in parallel, I worked in an agency and here I am today ready to do my best to achieve your project with all my skills.",
 	"title-contact": "Let's work together",
 	"description-contact": "Interested in working together? We should queue up a chat. I’ll buy the coffee.",
-	"footer-contact": "30% of all profit is going for help Ukraine"
+	"footer-contact": "30% of all profit is going for help Ukraine",
+	"AnneLise-description": "Portfolio for a graphic designer with some scroll effect and a carousel to highlight the projects",
+	"AnneLise-techno": "Javascript, html, scss, parcel",
+	"MarsExodus-description": "It is a progressive web app which was intended to prepare travelers to leave for Mars. This application included a calendar with events in the vehicle to make the trip more pleasant with a social network integrated into the application as well as a part mars weather thanks to the nasa api.",
+	"MarsExodus-techno": "React.js, Typescript, StyledComponents",
+	"Wonder-description": "Wonder is a mobile application made in a week, The objective of this application was to facilitate the choice of activities when visiting a city. The user had at his disposal the gps location of the people close to him who owned the application by selecting one of the people the user could see the places to visit as well as photos concerning these places.",
+	"Wonder-techno": "ReactNative",
+	"JustKnow-description": "Just Know is a quiz website where the user fills in his name and does a short quiz where at the end he has his result.",
+	"JustKnow-techno": "javascript, css, html",
+	"Blog-description": "Mafioso is a small experimental blog where several external APIs are used in particular for the text as well as for the images and the user has the possibility of adding articles to his favorites.",
+	"Blog-techno": "Vue.js, scss"
 }

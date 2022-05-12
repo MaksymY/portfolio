@@ -1,17 +1,17 @@
-import { createRouter, createWebHashHistory } from 'vue-router'
-/* import LandingPage from '@/views/LandingPage.vue' */
+/* import { createRouter, createWebHistory } from 'vue-router'
+import LandingPage from '@/views/LandingPage.vue'
 
 const routes = [
-  /* {
+  {
     path: '/',
     name: 'LandingPage',
     component: LandingPage
-  }, */
+  },
 ]
 
 const router = createRouter({
-  history: createWebHashHistory(),
+  history: createWebHistory(),
   routes
 })
 
-export default router
+export default router */

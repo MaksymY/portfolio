@@ -1,9 +1,18 @@
 <template>
-    <a class="WorkBadge" :href="link">
+    <div class="WorkBadge">
         <img class="WorkBadge__icon" :src="require(`../assets/${icon}.png`)"/>
-        <p class="WorkBadge__title">{{ title }}</p>
-        <slot />
-    </a>
+        <div class="WorkBadge__content">
+            <p class="WorkBadge__title">{{ title }}</p>
+            <p class="WorkBadge__description">{{ $t(description) }}</p>
+            <p class="WorkBadge__techno">{{ $t(technologie) }}</p>
+            <a
+                v-if="href"
+                :href="href"
+                class="WorkBadge__button"
+                target="_blank"
+            >Voir plus</a>
+        </div>
+    </div>
 </template>
 
 <script>
@@ -18,7 +27,14 @@ export default {
             type: String,
             required: true,
         },
-        link: {
+        description: {
+            type: String,
+            required: true,
+        },
+        technologie: {
+            type: String,
+        },
+        href: {
             type: String,
             required: true,
         }
@@ -29,22 +45,52 @@ export default {
 .WorkBadge {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     text-align: center;
-    justify-content: space-between;
     background-color: $font_color;
     border-radius: 10px;
     text-decoration: none;
     @media (min-width:900px) {
-        width: 40%;
+        width: 45%;
     }
-    /* padding: 50px;*/
+
+    &__content {
+        display: grid;
+        grid-template-rows: 15% 50% 10% 25%;
+        height: 400px;
+        align-items: center;
+    }
     &__title {
         color: white;
         font-weight: bold;
         margin: 0;
-        padding: 10% 10% 0 10%;
+    }
+
+    &__button {
+        background-color: transparent;
+        border-radius: 10px;
+        font-size: 20px;
+        color: white;
+        border: 3px solid white;
+        padding: 1em;
+        width: 175px;
+        margin: 30px;
+        margin: 0;
+        justify-self: center;
+        text-decoration: none;
+    }
+
+    &__description {
+        color: white;
+        font-size: 16px;
+        padding: 0 5%;
+        margin: 0;
+    }
+
+    &__techno {
+        color: white;
+        font-size: 16px;
+        margin: 0;
     }
 
     &__icon {
