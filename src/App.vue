@@ -1,7 +1,7 @@
 <template id="app">
 	<TheIconsSet />
 	<SocialDesk />
-	<NavBar/>
+	<NavBar />
 	<LandingSection />
 	<SkillsSection />
 	<RecentWorkSection />
@@ -30,7 +30,7 @@ export default {
 		WorkTogetherSection,
 		FooterSection
 	},
-	created() {
+	mounted() {
 		window.scrollTo(0, 0);
 	},
 }
