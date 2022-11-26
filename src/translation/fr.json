@@ -18,5 +18,8 @@
 	"JustKnow-description": "Just Know est un site web de quiz où l'utilisateur renseigne son nom et réalise un petit quiz dont il avait les résultats à la fin.",
 	"JustKnow-techno": "JavaScript, CSS, HTML",
 	"Blog-description": "Mafioso est un petit blogue expérimental où plusieurs API externes sont utilisées notamment pour le texte, pour les images et l'utilisateur. Il a aussi la possibilité d'ajouter les articles à ses favoris.",
-	"Blog-techno": "Vue.JS, SCSS"
+	"Blog-techno": "Vue.JS, SCSS",
+	"send-email": "Contactez par email",
+	"call-me": "Appellez moi",
+	"see-more": "Voir plus"
 }

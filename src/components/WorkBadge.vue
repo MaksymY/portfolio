@@ -10,7 +10,7 @@
                 :href="href"
                 class="WorkBadge__button"
                 target="_blank"
-            >Voir plus</a>
+            >{{ $t("see-more") }}</a>
         </div>
     </div>
 </template>

@@ -6,11 +6,15 @@
             <a
                 class="WorkTogether__button"
                 href="mailto:maksym.yankivskyypro@gmail.com"
-            >Send Mail</a>
+            >{{ $t("send-email") }}</a>
             <a
                 class="WorkTogether__button"
                 href="tel:0664155085"
-            >Call Me</a>
+            >{{ $t("call-me") }}</a>
+        </div>
+        <div class="WorkTogether__section--desktop">
+            <p class="WorkTogether__section__txt"><span>Email:</span> maksym.yankivskyypro@gmail.com</p>
+            <p class="WorkTogether__section__txt"><span>Téléphone:</span> 06.64.15.50.85</p>
         </div>
         <p class="WorkTogether__help">{{ $t("footer-contact") }}</p>
     </div>
@@ -63,10 +67,22 @@ export default {
         display: flex;
         flex-direction: column;
         gap: 10px;
+        
         @media (min-width:900px) {
-            display: flex;
             flex-direction: row;
             gap: 50px;
+            display: none;
+        }
+
+        &__txt {
+            color: $font_color;
+        }
+
+        &--desktop {
+            display: none;
+            @media (min-width:900px) {
+                display: block;
+            }
         }
     }
     &__button {
